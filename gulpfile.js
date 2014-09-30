@@ -5,7 +5,6 @@
   var gulp = require('gulp'),
       project = require('../projectStructure.json'),
       browserify = require('gulp-browserify'),
-      jade = require('gulp-jade'),
       scss = require('gulp-ruby-sass'),
       concat = require('gulp-concat'),
       connect = require('gulp-connect'),
@@ -58,8 +57,7 @@
   });
 
   gulp.task('views', function () {
-    gulp.src([project.devFolder + '/index.jade', project.devFolder + '/**/*.jade'])
-        .pipe(jade())
+    gulp.src([project.devFolder + '/index.html', project.devFolder + '/**/*.html'])
         .pipe(gulp.dest(project.distFolder))
         .pipe(connect.reload());
   });
@@ -105,8 +103,8 @@
   });
 
   gulp.task('watch', ['jshint'], function () {
-    // Watch jade files
-    gulp.watch([project.devFolder +'/index.jade', project.devFolder + '/**/*.jade'], { maxListeners: 999 }, ['views']);
+    // Watch HTML files
+    gulp.watch([project.devFolder +'/index.html', project.devFolder + '/**/*.html'], { maxListeners: 999 }, ['views']);
     // Watch the main js file
     gulp.watch([project.devFolder + '/index.js', project.devFolder + '/**/*.js'], { maxListeners: 999}, ['browserify']);
     // Watch scss files
