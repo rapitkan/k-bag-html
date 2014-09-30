@@ -1,19 +1,55 @@
 {
-  "name": "k-bag-html",
-  "version": "0.0.0",
-  "description": "K-bag's HTML version",
+  "name": "exampleApp",
+  "version": "0.0.1",
+  "description": "Example application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rapitkan/k-bag-html.git"
+    "start": "gulp dev",
+    "test": "gulp test",
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "author": "Raimo Pitkänen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rapitkan/k-bag-html/issues"
-  },
-  "homepage": "https://github.com/rapitkan/k-bag-html"
+  "devDependencies": {
+    "astrolabe": "^0.3.4-alpha",
+    "browserify": "^4.1.8",
+    "browserify-watcher": "^2.1.1",
+    "debowerify": "^0.7.1",
+    "debug": "^1.0.1",
+    "gulp": "^3.7.0",
+    "gulp-browserify": "^0.5.0",
+    "gulp-changed": "^0.4.0",
+    "gulp-clean": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-connect": "^2.0.5",
+    "gulp-debug": "^0.3.0",
+    "gulp-imagemin": "^0.6.0",
+    "gulp-jade": "^0.5.0",
+    "gulp-jshint": "^1.6.2",
+    "gulp-karma": "0.0.4",
+    "gulp-protractor": "0.0.7",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.5.0",
+    "gulp-sourcemaps": "^0.4.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-util": "^2.2.16",
+    "jasmine-reporters": "^0.4.1",
+    "jshint-stylish": "^0.2.0",
+    "karma": "^0.12.16",
+    "karma-browserify": "^0.2.1",
+    "karma-browserify-preprocessor": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-ie-launcher": "^0.1.5",
+    "karma-mocha": "^0.1.3",
+    "karma-opera-launcher": "^0.1.0",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-safari-launcher": "^0.1.1",
+    "mocha": "^1.20.1",
+    "protractor": "^0.24.1",
+    "selenium-server": "^2.38.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
 }
