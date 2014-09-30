@@ -1,0 +1,19 @@
+{
+  "name": "k-bag-html",
+  "version": "0.0.0",
+  "description": "K-bag's HTML version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rapitkan/k-bag-html.git"
+  },
+  "author": "Raimo Pitkänen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rapitkan/k-bag-html/issues"
+  },
+  "homepage": "https://github.com/rapitkan/k-bag-html"
+}
